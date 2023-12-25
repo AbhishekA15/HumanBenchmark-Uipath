@@ -1,0 +1,172 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NumberMemory" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="639.2,1919.2" sap2010:WorkflowViewState.IdRef="NumberMemory_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NumberMemory" sap:VirtualizedContainerService.HintSize="649.6,1854.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Human Benchmark - Number Memory Test" sap:VirtualizedContainerService.HintSize="587.2,1742.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1f971e02-81de-4503-9f21-636828aacc49" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1525.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="491.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/number-memory" DesignTimeRectangle="895, 701, 126, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Start'" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='Start' /&gt;" Guid="aa697df3-9642-4399-9547-8e8386da6c1f" InformativeScreenshot="372fd45aa3102688d4e0372baf278cf3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="491.2,1214.4" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="50" RetryInterval="00:00:00">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="449.6,923.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="text" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text '4'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" TextString="[text]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/number-memory" CvElementArea="346, 496, 1220, 103" CvType="InputBox" DesignTimeRectangle="345, 495, 1222, 103" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'4'" FullSelectorArgument="&lt;webctrl aaname='4' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='root' tag='DIV' type='' class='big-number ' /&gt;" Guid="f8dbdc0d-c679-40d9-87ab-6bfdd685c874" ImageBase64="" InformativeScreenshot="4955634c0173dacb164deadc39ad3a31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Text="[text]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/number-memory" CvElementArea="347, 497, 1217, 100" CvType="InputBox" DesignTimeRectangle="352, 499, 1213, 96" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="f11a09f5-1f63-48e3-a027-11d304772bd2" InformativeScreenshot="78d6aa4f833d64903a48a1927f1cc40a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/number-memory" CvElementArea="880, 629, 157, 66" CvTextArea="918, 648, 80, 22" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="883, 633, 151, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='Submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='Submit' /&gt;" Guid="0303fbd4-d73c-4b2f-a084-d631dae4118d" InformativeScreenshot="25e89740f7a11b74c18e9c630d8b8255.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/number-memory" DesignTimeRectangle="891, 706, 135, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'NEXT'" FullSelectorArgument="&lt;webctrl aaname='NEXT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NEXT' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='NEXT' /&gt;" Guid="d725a452-c250-4e73-801c-36d68094ac6c" InformativeScreenshot="fb69db7119a93c4ea82f79f71ef5d3c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="False" sap:VirtualizedContainerService.HintSize="333.6,131.2" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAEoklEQVR4Xu2bMXIUMRBFCX0Q7sEluANX4AaEZL4ARUTiIiKxIxKTOHLkZBOiTRzghGRpqqaWrafxrGYkun+71PWSVwUqkHq2NS3Nq8PnQST0gTP0gTP0gTP0gTP0gTP0gTP0gTP0gTN0Ob6+Ody828iX1xxND7oQNn37+0NL/H463H/isGLQhXi4muaxMewZwshK0IV42k8z2Bj2W4SRlaCrYGnbK7QrAV2FHx+m6WuM3TVHFoOuQq8C8P09RxaDrsLjbprBlrBdEIbVgy6B/Wp3CXuMMLIedAnsd6NLfHvLkfWgS9ClANiPGIaVhC5BlwJwd8lhJaHH06sAaL8AH6HH06UA/LzlsKrQ4+lSAOw9DsOqQo+nsQNqkWH7f4QeT3vItx9OoQdz826axJbIsP0/Qg/m/tM0iZvjac8xtaEH014A5I/AAD2Y9kiy/T9Cj6S9ANgDhDHloUfSXgDybP+P0CNpLwAZ7qEAeiSN0bj9D9q80sNoLwBrTx/tcbG/8nD1r/lqj6D7FQp6GHeX0yxsi8rtfznpCPe3aHoYP2+nKdgWC6ePZyf9NNz3UfQwfj9NU7AtsP1fNemn4f4iTY/BCmBL2CzbILYG2yb9NNw3svQY2gtAl3uMEX0kegyNBaBXRPSR6DE0FoAuYf+GiPc4egCNBaBXBLVR6QE0FoBeEZH+Bj0Ae/cJj7hTTHoAXTYwjRF3ikD3xv7n4RF6iE/3pteHGC0ReohP9ya8AEQfotG9CS8A0Z/w0V0JLwACZ8h0V8ILgMAZMt2V2AIQ0XorobsSWwA0rlDQ/bBX/8DQSH+D7sf3Tl/ibQuZG4x0Px6aP8R43P0dxBZy7cMU1Hmehe7HtoPD00k/DrX2SovSBV66H/UxO+mnrL3TKJP+Bt2P5SfAXpFsWitfU+0P10do662E7kd5DrNq0k9ZFXGd51nortivis34tkk/sqoAiKW/Qc/HqhNNvc/H6Pmov9Ii0Horoeej/kpLyw/df4OejPorLZLpb9CTUV8ANFpvJfRkVBYAmdZbCT0ZlQVANf0NeiYqC4Bw+hv0TFQWAHvRw19Ugp6JmgKg1HmehZ6JmhNN7fQ36GmovNKinf4GPQ01V1r0Wm8l9DTUXGkR6zzPQk/D2QKQIf0Neg5qCoBe53kWeg7OFgDV1lsJPQdnC4Bk53kWeg6WC0Ce9DfoCThbAIRbbyX0BCzfadRuvZXQE7B8pzFV+hv0BCzc6MqW/gZdnS+L93DlW28ldHUWCoB853kWujoLBSBh+ht0dRYKQML0N+jSLBSAJK23Ero0CwUgQ+d5Fro0zxWAtOlv0KXZP/MhRpLO8yx0aWYjVeuthK7Lcx9i5Ok8z0LXxbb5ZSRPf4Ouy2wByNZ6K6HrUkbC1lsJXZTZApA//Q26KGUBeBHpb9BFKQtAztZbCV0URM7O8yx0UXAN4qWkv0EX5bQL9ILS36DrYnseqwS767yNz1noA2foA2foA2foA2foA2foA2foA2foA2foA2de/fp4MQhkLEAwYwGCGQsQzFiAYMYCBDMWIJixAMGMBQhmLEAwYwGCGQsQzFiAYMYChPLx4g+dxVW0IlYOMQAAAABJRU5ErkJggg==" InformativeScreenshot="8a2c84992a886783957f5b604bad020b.jpg" Selector="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" Title="Human Benchmark - Reaction Time Test" Url="https://humanbenchmark.com/tests/number-memory" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

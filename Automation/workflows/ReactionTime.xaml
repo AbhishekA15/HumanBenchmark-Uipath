@@ -1,0 +1,150 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ReactionTime" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1131.2,1463.2" sap2010:WorkflowViewState.IdRef="ReactionTime_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ReactionTime" sap:VirtualizedContainerService.HintSize="649.6,1398.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Human Benchmark - Reaction Time Test" sap:VirtualizedContainerService.HintSize="587.2,1286.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1f971e02-81de-4503-9f21-636828aacc49" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1069.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reaction Time Test'" sap:VirtualizedContainerService.HintSize="491.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/reactiontime" CvTextArea="534, 545, 853, 85" CvTextArgument="Reaction Time Test" CvType="Text" DesignTimeRectangle="352, 523, 1213, 130" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Reaction Time Test'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Reaction Time Test' check:innerText='Reaction Time Test' /&gt;" Guid="bebbea9e-4570-4449-8c4d-d9fae33ddd3f" InformativeScreenshot="367eb5a24b1e118a85566e788730c957.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Reaction Time Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="491.2,758.4" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:00">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="449.6,467.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click!'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/reactiontime" CvTextArea="833, 542, 247, 87" CvTextArgument="Click!" CvType="Text" DesignTimeRectangle="352, 523, 1213, 130" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Click!'" FullSelectorArgument="&lt;webctrl aaname='Click!' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Click!' parentid='root' tag='DIV' type='' class='' check:innerText='Click!' /&gt;" Guid="f2e073f4-c62d-4129-bec3-c04896502ed1" InformativeScreenshot="f2b73c146c083dcd3cb98ddacd634834.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Reaction Time Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" WaitForReadyArgument="None" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click to keep going'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/reactiontime" CvTextArea="829, 657, 256, 33" CvTextArgument="Click to keep going" CvType="Text" DesignTimeRectangle="352, 653, 1213, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Click to keep going'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Click to keep going' check:innerText='Click to keep going' /&gt;" Guid="075675c8-d6f5-41c6-947c-a6eff7d25aa8" InformativeScreenshot="a87a2c440876e71926468baf83437049.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Reaction Time Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="False" sap:VirtualizedContainerService.HintSize="333.6,131.2" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAEoklEQVR4Xu2bMXIUMRBFCX0Q7sEluANX4AaEZL4ARUTiIiKxIxKTOHLkZBOiTRzghGRpqqaWrafxrGYkun+71PWSVwUqkHq2NS3Nq8PnQST0gTP0gTP0gTP0gTP0gTP0gTP0gTP0gTN0Ob6+Ody828iX1xxND7oQNn37+0NL/H463H/isGLQhXi4muaxMewZwshK0IV42k8z2Bj2W4SRlaCrYGnbK7QrAV2FHx+m6WuM3TVHFoOuQq8C8P09RxaDrsLjbprBlrBdEIbVgy6B/Wp3CXuMMLIedAnsd6NLfHvLkfWgS9ClANiPGIaVhC5BlwJwd8lhJaHH06sAaL8AH6HH06UA/LzlsKrQ4+lSAOw9DsOqQo+nsQNqkWH7f4QeT3vItx9OoQdz826axJbIsP0/Qg/m/tM0iZvjac8xtaEH014A5I/AAD2Y9kiy/T9Cj6S9ANgDhDHloUfSXgDybP+P0CNpLwAZ7qEAeiSN0bj9D9q80sNoLwBrTx/tcbG/8nD1r/lqj6D7FQp6GHeX0yxsi8rtfznpCPe3aHoYP2+nKdgWC6ePZyf9NNz3UfQwfj9NU7AtsP1fNemn4f4iTY/BCmBL2CzbILYG2yb9NNw3svQY2gtAl3uMEX0kegyNBaBXRPSR6DE0FoAuYf+GiPc4egCNBaBXBLVR6QE0FoBeEZH+Bj0Ae/cJj7hTTHoAXTYwjRF3ikD3xv7n4RF6iE/3pteHGC0ReohP9ya8AEQfotG9CS8A0Z/w0V0JLwACZ8h0V8ILgMAZMt2V2AIQ0XorobsSWwA0rlDQ/bBX/8DQSH+D7sf3Tl/ibQuZG4x0Px6aP8R43P0dxBZy7cMU1Hmehe7HtoPD00k/DrX2SovSBV66H/UxO+mnrL3TKJP+Bt2P5SfAXpFsWitfU+0P10do662E7kd5DrNq0k9ZFXGd51nortivis34tkk/sqoAiKW/Qc/HqhNNvc/H6Pmov9Ii0Horoeej/kpLyw/df4OejPorLZLpb9CTUV8ANFpvJfRkVBYAmdZbCT0ZlQVANf0NeiYqC4Bw+hv0TFQWAHvRw19Ugp6JmgKg1HmehZ6JmhNN7fQ36GmovNKinf4GPQ01V1r0Wm8l9DTUXGkR6zzPQk/D2QKQIf0Neg5qCoBe53kWeg7OFgDV1lsJPQdnC4Bk53kWeg6WC0Ce9DfoCThbAIRbbyX0BCzfadRuvZXQE7B8pzFV+hv0BCzc6MqW/gZdnS+L93DlW28ldHUWCoB853kWujoLBSBh+ht0dRYKQML0N+jSLBSAJK23Ero0CwUgQ+d5Fro0zxWAtOlv0KXZP/MhRpLO8yx0aWYjVeuthK7Lcx9i5Ok8z0LXxbb5ZSRPf4Ouy2wByNZ6K6HrUkbC1lsJXZTZApA//Q26KGUBeBHpb9BFKQtAztZbCV0URM7O8yx0UXAN4qWkv0EX5bQL9ILS36DrYnseqwS767yNz1noA2foA2foA2foA2foA2foA2foA2foA2foA2de/fp4MQhkLEAwYwGCGQsQzFiAYMYCBDMWIJixAMGMBQhmLEAwYwGCGQsQzFiAYMYChPLx4g+dxVW0IlYOMQAAAABJRU5ErkJggg==" InformativeScreenshot="66af1953687c37d914977258d6a041ca.jpg" Selector="&lt;html app='chrome.exe' title='Human Benchmark - Reaction Time Test' /&gt;" Title="Human Benchmark - Reaction Time Test" Url="https://humanbenchmark.com/tests/reactiontime" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

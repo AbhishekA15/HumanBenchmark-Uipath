@@ -1,0 +1,194 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="VerbalMemory" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1131.2,2210.4" sap2010:WorkflowViewState.IdRef="VerbalMemory_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="VerbalMemory" sap:VirtualizedContainerService.HintSize="672.8,2145.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Human Benchmark - Verbal Memory Test" sap:VirtualizedContainerService.HintSize="610.4,2033.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="ea5ee8f6-1c2e-4253-83c9-ef08029c34cd" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="576.8,1816.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String)]" Name="list" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="514.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ea5ee8f6-1c2e-4253-83c9-ef08029c34cd" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/verbal-memory" CvElementArea="891, 714, 134, 64" CvTextArea="930, 733, 56, 22" CvTextArgument="Start" CvType="Button" DesignTimeRectangle="895, 717, 126, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Start'" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='Start' /&gt;" Guid="f39ab39e-da32-4b86-bb1b-98a8df011724" InformativeScreenshot="554f3ae08cb8a273f10e92f61d33c137.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Verbal Memory Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="514.4,1504" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="500" RetryInterval="00:00:00">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="472.8,1212.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="text" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" DisplayName="Get Attribute 'corsairs'" sap:VirtualizedContainerService.HintSize="410.4,208" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[text]" ScopeIdentifier="ea5ee8f6-1c2e-4253-83c9-ef08029c34cd" Version="V3">
+                      <uix:NGetAttributeGeneric.Target>
+                        <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/verbal-memory" CvTextArea="836, 505, 241, 58" CvTextArgument="corsairs" CvType="Text" DesignTimeRectangle="352, 492, 1213, 88" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'corsairs'" FullSelectorArgument="&lt;webctrl class='word' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='word' parentid='root' tag='DIV' type='' aaname='corsairs' /&gt;" Guid="d05402e1-2d05-4f2f-8b3d-32046ce0c0b9" InformativeScreenshot="e9d24a1e804249208053bbcb854ea6ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Verbal Memory Test' /&gt;" SearchSteps="Selector" Version="V2" WaitForReadyArgument="None" />
+                      </uix:NGetAttributeGeneric.Target>
+                    </uix:NGetAttributeGeneric>
+                    <If Condition="[list.Contains(text)]" sap:VirtualizedContainerService.HintSize="410.4,852.8" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="False" ClickType="Single" DisplayName="Click 'SEEN'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ea5ee8f6-1c2e-4253-83c9-ef08029c34cd" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/verbal-memory" CvElementArea="804, 614, 142, 65" CvTextArea="843, 633, 63, 21" CvTextArgument="SEEN" CvType="Button" DesignTimeRectangle="808, 617, 136, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'SEEN'" FullSelectorArgument="&lt;webctrl aaname='SEEN' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='SEEN' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='SEEN' /&gt;" Guid="486b6d0a-a7da-4f28-a647-e219c181bd3b" InformativeScreenshot="98cc66972c91ef5289e211dc4f85e570.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Verbal Memory Test' /&gt;" SearchSteps="Selector" Version="V2" WaitForReadyArgument="None" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,422.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="False" ClickType="Single" DisplayName="Click 'NEW'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ea5ee8f6-1c2e-4253-83c9-ef08029c34cd" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/verbal-memory" CvElementArea="978, 614, 134, 65" CvTextArea="1016, 632, 57, 23" CvTextArgument="NEW" CvType="Button" DesignTimeRectangle="982, 617, 128, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'NEW'" FullSelectorArgument="&lt;webctrl aaname='NEW' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NEW' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='NEW' /&gt;" Guid="93ea6bab-a61c-4f98-abff-108e6ec990ed" InformativeScreenshot="5b316faf9ea6dba86c6f9b01f31bc9e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Verbal Memory Test' /&gt;" SearchSteps="Selector" Version="V2" WaitForReadyArgument="None" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_3" ItemToAppend="[text]" List="[list]" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="False" sap:VirtualizedContainerService.HintSize="333.6,131.2" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAEoklEQVR4Xu2bMXIUMRBFCX0Q7sEluANX4AaEZL4ARUTiIiKxIxKTOHLkZBOiTRzghGRpqqaWrafxrGYkun+71PWSVwUqkHq2NS3Nq8PnQST0gTP0gTP0gTP0gTP0gTP0gTP0gTP0gTN0Ob6+Ody828iX1xxND7oQNn37+0NL/H463H/isGLQhXi4muaxMewZwshK0IV42k8z2Bj2W4SRlaCrYGnbK7QrAV2FHx+m6WuM3TVHFoOuQq8C8P09RxaDrsLjbprBlrBdEIbVgy6B/Wp3CXuMMLIedAnsd6NLfHvLkfWgS9ClANiPGIaVhC5BlwJwd8lhJaHH06sAaL8AH6HH06UA/LzlsKrQ4+lSAOw9DsOqQo+nsQNqkWH7f4QeT3vItx9OoQdz826axJbIsP0/Qg/m/tM0iZvjac8xtaEH014A5I/AAD2Y9kiy/T9Cj6S9ANgDhDHloUfSXgDybP+P0CNpLwAZ7qEAeiSN0bj9D9q80sNoLwBrTx/tcbG/8nD1r/lqj6D7FQp6GHeX0yxsi8rtfznpCPe3aHoYP2+nKdgWC6ePZyf9NNz3UfQwfj9NU7AtsP1fNemn4f4iTY/BCmBL2CzbILYG2yb9NNw3svQY2gtAl3uMEX0kegyNBaBXRPSR6DE0FoAuYf+GiPc4egCNBaBXBLVR6QE0FoBeEZH+Bj0Ae/cJj7hTTHoAXTYwjRF3ikD3xv7n4RF6iE/3pteHGC0ReohP9ya8AEQfotG9CS8A0Z/w0V0JLwACZ8h0V8ILgMAZMt2V2AIQ0XorobsSWwA0rlDQ/bBX/8DQSH+D7sf3Tl/ibQuZG4x0Px6aP8R43P0dxBZy7cMU1Hmehe7HtoPD00k/DrX2SovSBV66H/UxO+mnrL3TKJP+Bt2P5SfAXpFsWitfU+0P10do662E7kd5DrNq0k9ZFXGd51nortivis34tkk/sqoAiKW/Qc/HqhNNvc/H6Pmov9Ii0Horoeej/kpLyw/df4OejPorLZLpb9CTUV8ANFpvJfRkVBYAmdZbCT0ZlQVANf0NeiYqC4Bw+hv0TFQWAHvRw19Ugp6JmgKg1HmehZ6JmhNN7fQ36GmovNKinf4GPQ01V1r0Wm8l9DTUXGkR6zzPQk/D2QKQIf0Neg5qCoBe53kWeg7OFgDV1lsJPQdnC4Bk53kWeg6WC0Ce9DfoCThbAIRbbyX0BCzfadRuvZXQE7B8pzFV+hv0BCzc6MqW/gZdnS+L93DlW28ldHUWCoB853kWujoLBSBh+ht0dRYKQML0N+jSLBSAJK23Ero0CwUgQ+d5Fro0zxWAtOlv0KXZP/MhRpLO8yx0aWYjVeuthK7Lcx9i5Ok8z0LXxbb5ZSRPf4Ouy2wByNZ6K6HrUkbC1lsJXZTZApA//Q26KGUBeBHpb9BFKQtAztZbCV0URM7O8yx0UXAN4qWkv0EX5bQL9ILS36DrYnseqwS767yNz1noA2foA2foA2foA2foA2foA2foA2foA2foA2de/fp4MQhkLEAwYwGCGQsQzFiAYMYCBDMWIJixAMGMBQhmLEAwYwGCGQsQzFiAYMYChPLx4g+dxVW0IlYOMQAAAABJRU5ErkJggg==" InformativeScreenshot="42873517f1bbdf6007cfbca9a13ae3e5.jpg" Selector="&lt;html app='chrome.exe' title='Human Benchmark - Verbal Memory Test' /&gt;" Title="Human Benchmark - Reaction Time Test" Url="https://humanbenchmark.com/tests/verbal-memory" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
