@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="NumberMemory" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="639.2,1919.2" sap2010:WorkflowViewState.IdRef="NumberMemory_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="NumberMemory" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1131.2,2200.8" sap2010:WorkflowViewState.IdRef="NumberMemory_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -97,30 +97,38 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NumberMemory" sap:VirtualizedContainerService.HintSize="649.6,1854.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NumberMemory" sap:VirtualizedContainerService.HintSize="649.6,2136" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Human Benchmark - Number Memory Test" sap:VirtualizedContainerService.HintSize="587.2,1742.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1f971e02-81de-4503-9f21-636828aacc49" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Human Benchmark - Number Memory Test" sap:VirtualizedContainerService.HintSize="587.2,2024" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1f971e02-81de-4503-9f21-636828aacc49" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1525.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1807.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="num" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="491.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="How many levels to clear (Numeric):" Title="Input">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[num]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="491.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f971e02-81de-4503-9f21-636828aacc49" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://humanbenchmark.com/tests/number-memory" DesignTimeRectangle="895, 701, 126, 59" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Start'" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='css-de05nr e19owgy710' check:innerText='Start' /&gt;" Guid="aa697df3-9642-4399-9547-8e8386da6c1f" InformativeScreenshot="372fd45aa3102688d4e0372baf278cf3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Human Benchmark - Number Memory Test' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="491.2,1214.4" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="50" RetryInterval="00:00:00">
+            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="491.2,1214.4" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[CInt(num)]" RetryInterval="00:00:00">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
                   <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="449.6,923.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
